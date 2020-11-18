@@ -2,6 +2,7 @@
 let user = 0;
 let computerchoice = 0;
 
+// create variable based upon click of the player
 function playerschoice (){
     document.getElementById("rock").addEventListener("click", function(){
         user = "rock";
@@ -18,6 +19,7 @@ playerschoice ();
 
 
 document.getElementById("computer").addEventListener("click", function(){
+    //randomize computers choice, if else statement for converting the numbers into strings
     let computer = Math.floor ( Math.random() *3);
     if (computer === 0){
         computerchoice = "rock";
@@ -30,6 +32,8 @@ document.getElementById("computer").addEventListener("click", function(){
     }
     console.log(computerchoice);
     console.log(user);
+
+    //conditions to win
     if (user === computerchoice){
         document.getElementById("result").innerHTML = "It's a tie!";
     }
@@ -55,5 +59,10 @@ document.getElementById("computer").addEventListener("click", function(){
         document.getElementById("result").innerHTML = "Please pick your weapon";
     }
 
+    console.log(`img/computer${computerchoice}.png`)
+
+    //image change based on user input and computerchoice
+    document.getElementById("imgplayer").src = `img/player${user}.png`;
+    document.getElementById("imgcomputer").src = `img/computer${computerchoice}.png`;
 
 });

@@ -1,3 +1,14 @@
+.game{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.inputimages{
+    display: flex;
+    justify-content: center;
+}
+
+
 #rock{
     background-image: url("img/rockbutton.png");
     width: 130px;
