@@ -1,0 +1,35 @@
+#rock{
+    background-image: url("img/rockbutton.png");
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+    border-style: none;
+}
+
+#paper{
+    background-image: url("img/paperbutton.png");
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+    border-style: none;
+}
+
+#scissors{
+    background-image: url("img/scissorsbutton.png");
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+    border-style: none;
+}
+
+#scissors:hover {
+    background-image: url("img/scissorshover.png");
+}
+
+#paper:hover {
+    background-image: url("img/paperhover.png");
+}
+
+#rock:hover {
+    background-image: url("img/rockhover.png");
+}

@@ -29,14 +29,31 @@ document.getElementById("computer").addEventListener("click", function(){
         computerchoice = "scissors";
     }
     console.log(computerchoice);
-    if (user === 0){
-        document.getElementById("result").innerHTML = "Please pick your weapon";
-    }
-    else if (user === computerchoice){
+    console.log(user);
+    if (user === computerchoice){
         document.getElementById("result").innerHTML = "It's a tie!";
+    }
+    else if (user === "paper" && computerchoice === "rock"){
+        document.getElementById("result").innerHTML = "You win! paper beats rock"
     }
     else if (user === "rock" && computerchoice === "scissors"){
         document.getElementById("result").innerHTML = "You win! Rock beats scissors"
     }
+    else if (user === "scissors" && computerchoice === "paper"){
+        document.getElementById("result").innerHTML = "You win! Scissors beats paper"
+    }
+    else if (user === "paper" && computerchoice === "scissors"){
+        document.getElementById("result").innerHTML = "You lose :(! Scissors beats paper"
+    }
+    else if (user === "scissors" && computerchoice === "rock"){
+        document.getElementById("result").innerHTML = "You lose :(! Rock beats scissors"
+    }
+    else if (user === "rock" && computerchoice === "paper"){
+        document.getElementById("result").innerHTML = "You lose :(! paper beats rock"
+    }
+    else {
+        document.getElementById("result").innerHTML = "Please pick your weapon";
+    }
+
 
 });
