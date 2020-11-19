@@ -1,6 +1,26 @@
+body{
+    background-image: url("img/background2.png");
+    background-position: top;
+}
+
+h1{
+    display: none;
+}
+
+.title{
+    background-image: url("img/title.png");
+    width: 720px;
+    height: 240px;
+    background-position: center;
+    margin: 0 auto;
+}
+
 .game{
-    margin-top: 70px;
+    margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .inputimages{
@@ -11,25 +31,28 @@
 
 #rock{
     background-image: url("img/rockbutton.png");
-    width: 130px;
-    height: 130px;
-    margin: 20px;
+    background-color: transparent;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
     border-style: none;
 }
 
 #paper{
     background-image: url("img/paperbutton.png");
-    width: 130px;
-    height: 130px;
-    margin: 20px;
+    background-color: transparent;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
     border-style: none;
 }
 
 #scissors{
-    background-image: url("img/scissorsbutton.png");
-    width: 130px;
-    height: 130px;
-    margin: 20px;
+    background-image: url("img/scissorsbutton2.png");
+    background-color: transparent;
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
     border-style: none;
 }
 
@@ -43,4 +66,17 @@
 
 #rock:hover {
     background-image: url("img/rockhover.png");
+}
+
+#computer{
+    background-image: url("img/playbutton.png");
+    background-color: transparent;
+    height: 45px;
+    width: 110px;
+    margin: 10px;
+    border-style: none;
+}
+
+#computer:hover {
+    background-image: url("img/playhover.png");
 }
